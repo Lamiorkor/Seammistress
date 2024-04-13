@@ -1,0 +1,40 @@
+/***********
+Customer Page
+************/
+
+#popup-form {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #6e7df1;
+    padding: 20px;
+    border: 1px solid #ccc;
+    z-index: 9999;
+    width: 300px;
+}
+
+#popup-form input[type="text"], button[type="submit"] {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#popup-form input[type="text"] {
+    width: 100%;
+}
+
+button {
+    background-color: #4CAF50; 
+    color: white; 
+    padding: 10px 20px; 
+    border: none; 
+    cursor: pointer; 
+    border-radius: 5px; 
+}
+
+.actions {
+    display: flex;
+    gap: 10px;
+    justify-content: space-evenly;  
+}
