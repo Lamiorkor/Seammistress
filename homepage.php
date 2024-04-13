@@ -1,10 +1,3 @@
-<?php
-
-include "../settings/core.php";
-
-userIDSessionCheck();
-?>
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -13,7 +6,7 @@ userIDSessionCheck();
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SeamMistress - Admin Dashboard</title>
+    <title>SeamMistress - Homepage</title>
     <link rel="stylesheet" type="text/css" href="../css/homepage.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
@@ -51,7 +44,10 @@ userIDSessionCheck();
 
         <!--main section start-->
         <main>
-            
+            <img src="../images/seamstress1.jpeg" alt="Seamstress Image1">
+            <img src="../images/seamstress2.jpeg" alt="Seamstress Image2">
+            <img src="../images/seamstress3.jpeg" alt="Seamstress Image3">
+            <img src="../images/seamstress4.jpeg" alt="Seamstress Image4">
         </main>
         <!--main section end-->
 
