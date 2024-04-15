@@ -1,11 +1,11 @@
 <?php
-
 include "../settings/core.php";
 include "../actions/get_orders_action.php";
+include "../functions/get_materials_fxn.php";
 
 userIDSessionCheck();
-
 $uncompletedOrders = getUncompletedOrders();
+$materials = getMaterials();
 ?>
 
 
@@ -81,7 +81,7 @@ $uncompletedOrders = getUncompletedOrders();
                             <th>Actions</th>
                         </tr>
                     </thead>
-                    <?php  ?>
+                    <?php echo $materials; ?>
                 </table>
             </div>
         </main>

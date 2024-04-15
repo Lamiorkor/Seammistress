@@ -6,8 +6,8 @@ include "../actions/get_orders_action.php";
 
 
 userIDSessionCheck();
-
 $uncompletedOrders = getUncompletedOrders();
+$orders = getOrders();
 ?>
 
 
@@ -84,7 +84,7 @@ $uncompletedOrders = getUncompletedOrders();
                         <th>Status</th>
                         <th>Actions</th>
                     </tr>
-                    <?php getOrders(); ?>
+                    <?php echo $orders; ?>
                 </table>
             </div>
 
@@ -105,9 +105,9 @@ $uncompletedOrders = getUncompletedOrders();
                     <h2>Add an Order</h2>
                     <form action="../actions/add_an_order_action.php" method="POST">
                         <input type="text" name="name" id="name" placeholder="Customer First Name" pattern="[A-Za-z ]+" required="">
-                        <input type="text" name="price" id="price" placeholder="Price" pattern="[0-9]+" required="">
-                        <input type="text" name="amount_in_stock" id="amount_in_stock" placeholder="Amount in Stock" pattern="^\+\d{1,3}\d{9}$|^\d{9}$" required="">
-                        <button type="submit" name="submit" onclick="closeForm()" value="material">Add</button>
+                        <input type="text" name="outfit_type" id="outfit_type" placeholder="Outfit Type" pattern="[A-Za-z ]+" required="">
+                        <input type="date" name="due_date" id="due_date" placeholder="Due Date" required="">
+                        <button type="submit" name="submit" onclick="closeForm()" value="order">Add</button>
                     </form>
                 </div>
             </div>

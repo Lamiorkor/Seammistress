@@ -52,6 +52,8 @@ function getOrders() {
     }
 }
 
+getOrders();
+
 function getRecentOrders() {
     include "../settings/connection.php";
 

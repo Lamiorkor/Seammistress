@@ -17,7 +17,7 @@ function getCustomers() {
             echo "<td class='material-symbols-sharp'><a href='../admin/customer_measurements_view.php?cid=" . $row['cid'] . ">measuring_tape</a></td>";
             echo "<td>";
             echo "<div class='actions'>";
-            echo "<div class='delete'><a href='../actions/delete_customer_action.php?cid=" . $row['cid'] . "'><img src='../assets/delete.png' alt='delete' title='delete request' style='width: 20px;'></a></div>";
+            echo "<div class='delete'><a href='../actions/delete_a_customer_action.php?cid=" . $row['cid'] . "'><img src='../assets/delete.png' alt='delete' title='delete request' style='width: 20px;'></a></div>";
             echo "</div>";
             echo "</td>";      
             echo "</tr>";
